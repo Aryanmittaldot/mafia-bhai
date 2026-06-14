@@ -1,9 +1,9 @@
+```html
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Prediction Mafia</title>
 
 <style>
@@ -17,80 +17,104 @@ font-family:Arial,sans-serif;
 body{
 height:100vh;
 background:url(logo.jpeg) center center/cover no-repeat;
-display:flex;
-justify-content:center;
-align-items:center;
 overflow:hidden;
 }
 
 .overlay{
 width:100%;
-height:100%;
+height:100vh;
+backdrop-filter:blur(8px);
 background:rgba(0,0,0,0.45);
 display:flex;
 justify-content:center;
 align-items:center;
 text-align:center;
+padding:20px;
 }
 
 .container{
-padding:20px;
 max-width:600px;
 color:white;
 }
 
 .top-text{
 font-size:28px;
-margin-bottom:15px;
+margin-bottom:20px;
 text-shadow:0 0 10px black;
 }
 
 .title{
-font-size:65px;
+font-size:72px;
 font-weight:bold;
+line-height:0.95;
 margin-bottom:30px;
-text-shadow:0 0 15px black;
+text-shadow:0 0 25px #b300ff;
 }
 
 .join-btn{
 display:inline-block;
-background:#0d00ff;
-color:white;
 padding:20px 35px;
-font-size:28px;
-font-weight:bold;
+background:linear-gradient(90deg,#4d00ff,#b300ff);
+color:white;
 text-decoration:none;
+font-size:24px;
+font-weight:bold;
 border-radius:18px;
-box-shadow:0 0 25px rgba(13,0,255,.8);
-margin-bottom:40px;
+box-shadow:0 0 25px #8a2be2;
+animation:pulse 1.5s infinite;
+margin-bottom:35px;
 }
 
-.join-btn:hover{
-transform:scale(1.03);
+@keyframes pulse{
+0%{transform:scale(1);}
+50%{transform:scale(1.05);}
+100%{transform:scale(1);}
 }
 
 .count-text{
-font-size:24px;
+font-size:22px;
 margin-bottom:15px;
 }
 
 .circle{
-width:130px;
-height:130px;
+width:140px;
+height:140px;
 border-radius:50%;
-background:#0d00ff;
+background:linear-gradient(180deg,#4d00ff,#001eff);
 display:flex;
 justify-content:center;
 align-items:center;
-font-size:55px;
+font-size:60px;
 font-weight:bold;
 margin:auto;
-box-shadow:0 0 30px rgba(13,0,255,.8);
+box-shadow:0 0 30px #4d00ff;
 }
 
 .bottom{
 margin-top:25px;
-font-size:24px;
+font-size:22px;
+}
+
+@media(max-width:600px){
+
+.title{
+font-size:58px;
+}
+
+.top-text{
+font-size:22px;
+}
+
+.join-btn{
+font-size:20px;
+padding:18px 25px;
+}
+
+.circle{
+width:120px;
+height:120px;
+font-size:50px;
+}
 }
 </style>
 </head>
@@ -106,13 +130,13 @@ India No.1 Cricket Community
 </div>
 
 <div class="title">
-PREDICTION MAFIA
+PREDICTION<br>MAFIA
 </div>
 
-<a href="https://telegram.me/+qprvDFpBY442ZjZl
+<a href=https://telegram.me/+qprvDFpBY442ZjZl
 class="join-btn"
 onclick="fbq('track','Lead');">
-Join The Original Prediction Mafia 🚀
+🚀 JOIN TELEGRAM CHANNEL
 </a>
 
 <div class="count-text">
@@ -147,3 +171,4 @@ count--;
 
 </body>
 </html>
+```
